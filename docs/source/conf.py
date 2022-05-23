@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Lumache'
+project = 'Lab 2 Handout: Using Blueprints to Architect A Photo Album Web Application'
 copyright = '2021, Graziella'
 author = 'Graziella'
 
