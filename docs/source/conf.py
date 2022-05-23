@@ -4,7 +4,7 @@
 
 project = 'Lab2: Using Blueprints to Architect A Photo Album Web Application'
 copyright = '2021, Graziella'
-author = 'Graziella'
+author = '刘奕秀 李敏 吴佩媛'
 
 release = '0.1'
 version = '0.1.0'
