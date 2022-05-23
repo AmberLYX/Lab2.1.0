@@ -2,7 +2,7 @@
 
 # -- Project information
 
-project = 'Lab 2 Handout: Using Blueprints to Architect A Photo Album Web Application'
+project = 'Lab2: Using Blueprints to Architect A Photo Album Web Application'
 copyright = '2021, Graziella'
 author = 'Graziella'
 
