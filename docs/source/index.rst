@@ -14,22 +14,21 @@ Introduction
 [吴佩媛]- 201931990410 - 29723741292@qq.com
 
   
+- 下载Photo String的源代码并运行。
 
-+ 下载Photo String的源代码并运行。
+- 绘制以下蓝图：upload_bp, show_bp, search_bp, and api_bp
 
-+ 绘制以下蓝图：upload_bp, show_bp, search_bp, and api_bp
+- 将上述蓝图注册到web应用程序。
 
-+ 将上述蓝图注册到web应用程序。
+- upload_bp允许上传新照片，关联的路由为/upload。
 
-+ upload_bp允许上传新照片，关联的路由为/upload。
+- show_bp允许按时间顺序显示所有照片及其描述,关联的路由为/show。
 
-+ show_bp允许按时间顺序显示所有照片及其描述,关联的路由为/show。
+- search_bp允许根据照片描述过滤照片，关联的路由为/search/query-string（返回描述与查询字符串匹配的照片作为搜索结果）。
 
-+ search_bp允许根据照片描述过滤照片，关联的路由为/search/query-string（返回描述与查询字符串匹配的照片作为搜索结果）。
+- api_bp允许从命令行获取JSON格式的所有照片信息，关联的路由是/api/json（返回的json字符串必须包含每张照片的照片ID、上载日期、照片大小（KB）和照片描述）。
 
-+ api_bp允许从命令行获取JSON格式的所有照片信息，关联的路由是/api/json（返回的json字符串必须包含每张照片的照片ID、上载日期、照片大小（KB）和照片描述）。
-
-+ 添加新功能
+- 添加新功能
 
 
 Materials and Methods
@@ -68,9 +67,10 @@ upload_bp.py
    from UseSqlite import InsertQuery
    from datetime import datetime
 
-   upload_bp = Blueprint('upload_bp', __name__, url_prefix='/upload', template_folder='templates', static_folder='static')
+   upload_bp = Blueprint('upload_bp', __name__, url_prefix = '/upload', 
+   template_folder = 'templates', static_folder = 'static')
 
-   @upload_bp.route("/",methods=['POST','GET'])
+   @upload_bp.route("/",methods = ['POST','GET'])
    def upload():
        if request.method == 'POST':
               uploaded_file = request.files['file']
@@ -81,12 +81,16 @@ upload_bp.py
               description = request.form['description']
               path = './static/upload/' + new_filename
               iq = InsertQuery('./static/RiskDB.db')
-              iq.instructions("INSERT INTO photo Values('%s','%s','%s','%s')" % (time_info, description, path, new_filename))
+              iq.instructions("INSERT INTO photo Values('%s','%s','%s','%s')" % 
+              (time_info, description, path, new_filename))
               iq.do()
-           return '<p>You have uploaded %s.<br/> <a href="/">Return</a>.' % (uploaded_file.filename)
+           return '<p>You have uploaded %s.<br/> <a href="/">Return</a>.' % 
+           (uploaded_file.filename)
        else:
-           page = '''<form action="http://127.0.0.1:5000/upload/" method="post" enctype="multipart/form-data">
-                 <input type="file"name="file"><input name="description"><input type="submit"value="Upload"></form>'''
+           page = '''<form action = "http://127.0.0.1:5000/upload/" method = "post" 
+           enctype = "multipart/form-data">
+                 <input type = "file"name = "file"><input name = "description"><input type
+                 = "submit" value = "Upload"> </form>'''
            r = "SELECT * FROM photo ORDER By time desc"
            return page
            
@@ -99,7 +103,8 @@ show_bp.py
    from flask import Blueprint
    from utils import get_database_photos
 
-   show_bp = Blueprint('show_bp', __name__, url_prefix='/show', template_folder='templates', static_folder='static')
+   show_bp = Blueprint('show_bp', __name__, url_prefix = '/show',
+   template_folder = 'templates', static_folder = 'static')
 
    @show_bp.route("/")
    def search():
@@ -115,7 +120,8 @@ search_bp.py
    from flask import Blueprint
    from utils import get_database_photos
 
-   search_bp = Blueprint('search_bp', __name__, url_prefix='/search', template_folder='templates', static_folder='static')
+   search_bp = Blueprint('search_bp', __name__, url_prefix = '/search',
+   template_folder = 'templates', static_folder = 'static')
     
    @search_bp.route("/<name>/")
    def search(name):
@@ -130,7 +136,8 @@ api_bp.py
    from flask import Blueprint
    from UseSqlite import RiskQuery
 
-   api_bp = Blueprint('api_bp', __name__, url_prefix='/api', template_folder='templates', static_folder='static')
+   api_bp = Blueprint('api_bp', __name__, url_prefix = '/api',
+   template_folder = 'templates',static_folder='static')
 
 
 
