@@ -1,4 +1,4 @@
-Lab 2 Handout: Using Blueprints to Architect A Photo Album Web Application   
+Lab2: Using Blueprints to Architect A Photo Album Web Application   
 ===================================
 
 
