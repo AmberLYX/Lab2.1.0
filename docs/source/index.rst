@@ -186,6 +186,40 @@ api_bp.py
 
 添加新功能[音乐播放器]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+utils.py[工具类]
+
+.. code-block:: python
+
+   from PIL import Image
+   from UseSqlite import RiskQuery
+
+
+   def make_html_paragraph(s):
+       if s.strip()=='':
+           return ''
+       lst=s.split(',')
+       picture_path=lst[2].strip()
+       picture_name=lst[3].strip()
+       im = Image.open(picture_path)
+      im.thumbnail((400, 300))
+       im.save('./static/figure/'+picture_name, 'jpeg')
+       result='<p>'
+       result+='<i>%s</i><br/>'%(lst[0])
+       result+='<i>%s</i><br/>'%(lst[1])
+       result+='<a href="%s"><img src="/static/figure/%s"alt="风景图"></a>'%(picture_path,picture_name)
+       return result+'</p>'
+
+   def get_database_photos(r):
+      rq=RiskQuery('./static/RiskDB.db')
+       rq.instructions(r)
+       rq.do()
+       record='<p>My past photo</p>'
+       
+       #音乐播放器
+       record+='<audio class="aud" controls="controls"><source src="https://repo.bfw.wiki/bfwrepo/sound/5c89fd22dea6948307.mp3" type="audio/mpeg"></audio>'
+       for r in rq.format_results().split('\n\n'):
+           record+='%s'%(make_html_paragraph(r))
+       return record+'\n'
 
 
 References
