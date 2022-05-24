@@ -94,7 +94,9 @@ upload_bp.py
            r = "SELECT * FROM photo ORDER By time desc"
            return page
            
-           
+.. image:: ../upload_bp.png
+   :align: center
+   :alt: upload_bp运行图        
     
 show_bp.py  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
