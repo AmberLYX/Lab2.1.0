@@ -59,3 +59,34 @@ Photo String 的运行
    :alt: 运行结果图
 
 
+upload_bp
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. code-block:: python
+
+from flask import Blueprint,request
+from UseSqlite import InsertQuery
+from datetime import datetime
+
+upload_bp = Blueprint('upload_bp', __name__, url_prefix='/upload', template_folder='templates', static_folder='static')
+
+@upload_bp.route("/",methods=['POST','GET'])
+def upload():
+    if request.method == 'POST':
+        uploaded_file = request.files['file']
+        time_str = datetime.now().strftime('%Y%m%d%H%M%S')
+        new_filename = time_str + '.jpg'
+        uploaded_file.save('./static/upload/' + new_filename)
+        time_info = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        description = request.form['description']
+        path = './static/upload/' + new_filename
+        iq = InsertQuery('./static/RiskDB.db')
+        iq.instructions("INSERT INTO photo Values('%s','%s','%s','%s')" % (time_info, description, path, new_filename))
+        iq.do()
+        return '<p>You have uploaded %s.<br/> <a href="/">Return</a>.' % (uploaded_file.filename)
+    else:
+        page = '''<form action="http://127.0.0.1:5000/upload/" method="post" enctype="multipart/form-data">
+              <input type="file"name="file"><input name="description"><input type="submit"value="Upload"></form>'''
+        r = "SELECT * FROM photo ORDER By time desc"
+        return page
+    
