@@ -186,7 +186,7 @@ api_bp.py
 
 添加新功能[音乐播放器]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-utils.py[工具类]
+utils.py [工具类]
 
 .. code-block:: python
 
@@ -217,7 +217,8 @@ utils.py[工具类]
        
        #音乐播放器
        record+='<audio class="aud" controls="controls">
-       <source src="https://repo.bfw.wiki/bfwrepo/sound/5c89fd22dea6948307.mp3" type="audio/mpeg"></audio>'
+       <source src="https://repo.bfw.wiki/bfwrepo/sound/5c89fd22dea6948307.mp3" 
+       type="audio/mpeg"></audio>'
        for r in rq.format_results().split('\n\n'):
            record+='%s'%(make_html_paragraph(r))
        return record+'\n'
