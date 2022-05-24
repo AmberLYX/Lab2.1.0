@@ -1,8 +1,20 @@
 Lab 2 Handout: Using Blueprints to Architect A Photo Album Web Application   
 ===================================
 
+
 Introduction
-----
+------------------------
+
+成员信息：
+
+[刘奕秀]- 201931990209 - 1978933929@qq.com (TECH LEAD)
+
+[李敏]- 201931990403 - 2609891867@qq.com
+
+[吴佩媛]- 201931990410 - 29723741292@qq.com
+
+  
+
 + 下载Photo String的源代码并运行。
 
 + 绘制以下蓝图：upload_bp, show_bp, search_bp, and api_bp
@@ -19,22 +31,31 @@ Introduction
 
 + 添加新功能
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Materials and Methods
+------------------------
 
-.. note::
+工具
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   This project is under active development.
+- **blueprint**：蓝图是应用中可以作为子路由的对象。蓝图定义了同样的添加路由的方式，可以将一系列路由注册到蓝图上而不是直接注册到应用上，然后再以可插拔的方式将蓝图注册到到应用程序。
 
-Contents
---------
 
-.. toctree::
+方法
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   usage
-   api
+使用blueprint的方法
+
+https://www.imooc.com/wiki/flasklesson/blueprint.html
+
+Results
+-------------
+
+Photo String 的运行
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: ../run.jpg
+   :align: center
+   :alt: 运行结果图
+
+
