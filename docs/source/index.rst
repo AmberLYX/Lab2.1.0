@@ -94,9 +94,13 @@ upload_bp.py
            r = "SELECT * FROM photo ORDER By time desc"
            return page
            
-.. image:: ../upload_bp.png
+.. image:: ../upload_bp1.png
    :align: center
-   :alt: upload_bp运行图        
+   :alt: upload_bp1运行图     
+              
+.. image:: ../upload_bp2.png
+   :align: center
+   :alt: upload_bp2运行图    
     
 show_bp.py  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -113,7 +117,10 @@ show_bp.py
        r = "SELECT * FROM photo ORDER By time desc"
        return get_database_photos(r)
 
-
+           
+.. image:: ../show_bp.png
+   :align: center
+   :alt: show_bp运行图    
 
 search_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -129,7 +136,11 @@ search_bp.py
    def search(name):
        r = "SELECT * FROM photo WHERE  description  LIKE '%"+name+"%' ORDER By time desc"
        return get_database_photos(r)
-
+           
+.. image:: ../search_bp.png
+   :align: center
+   :alt: search_bp运行图    
+   
 api_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: python
@@ -168,4 +179,15 @@ api_bp.py
        str1 = json.dumps(json_data)
        jsonToPhoto = json.loads(str1)
        return jsonToPhoto
+           
+.. image:: ../api_bp.png
+   :align: center
+   :alt: api_bp运行图    
 
+添加新功能[音乐播放器]
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+References
+-------------
+[1] `blueprints <http://exploreflask.com/en/latest/blueprints.html/>`_
