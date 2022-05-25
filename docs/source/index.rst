@@ -230,10 +230,11 @@ utils.py [工具类]
        for r in rq.format_results().split('\n\n'):
            record+='%s'%(make_html_paragraph(r))
        return record+'\n'
-       
+
+
 .. image:: ../Photo/new.png
    :align: center
-   :alt:新功能
+   :alt: 新功能
    
 图7：添加新功能的运行结果图    
 References
