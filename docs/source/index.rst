@@ -57,7 +57,6 @@ Photo String 的运行
    :align: center
    :alt: Photo String 运行结果图
    
-
 `图1：Photo String 的运行结果图  <https://cloud.zjnu.edu.cn/share/2c2667c25e40c97c663845c718>`_
 
 
