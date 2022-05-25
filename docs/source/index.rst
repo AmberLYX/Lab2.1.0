@@ -56,7 +56,8 @@ Photo String 的运行
 .. image:: ../Photo/run.png
    :align: center
    :alt: Photo String 运行结果图
-   
+
+
 `图1：Photo String 的运行结果图  <https://cloud.zjnu.edu.cn/share/2c2667c25e40c97c663845c718>`_
 
 
@@ -267,4 +268,5 @@ References
 
 [1] `blueprints <http://exploreflask.com/en/latest/blueprints.html/>`_
 [2] `JSON format <http://lanlab.org/course/2022s/softarch/returned_json.txt/>`_
+[3] `Flask蓝图的基本使用 <https://m.imooc.com/wiki/flasklesson-blueprint/>`_
 
