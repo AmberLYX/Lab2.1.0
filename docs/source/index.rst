@@ -53,9 +53,9 @@ Results
 Photo String 的运行
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../run.jpg
+.. image:: ../Photo/run.jpg
    :align: center
-   :alt: 运行结果图
+   :alt: Photo String 运行结果图
 
 
 upload_bp.py
@@ -94,18 +94,14 @@ upload_bp.py
            r = "SELECT * FROM photo ORDER By time desc"
            return page
            
-.. image:: ../upload_bp1.png
+.. image:: ../upload1.png
    :align: center
-   :alt: upload_bp1运行图     
+   :alt: upload_bp运行图     
               
-.. image:: ../upload_bp2.png
+.. image:: ../upload2.png
    :align: center
-   :alt: upload_bp2运行图    
+   :alt: upload_bp运行图    
     
-
-.. image:: ../Photo/mermaid-BeginningOfSpring2.png
-   :align: center
-   :alt: BeginningOfSpring类/函数依赖关系图
    
 show_bp.py  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -141,9 +137,9 @@ search_bp.py
        r = "SELECT * FROM photo WHERE  description  LIKE '%"+name+"%' ORDER By time desc"
        return get_database_photos(r)
            
-.. image:: ../search_bp.png
+.. image:: ../Photo/search.png
    :align: center
-   :alt: search_bp运行图    
+   :alt: search
    
 api_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -184,9 +180,9 @@ api_bp.py
        jsonToPhoto = json.loads(str1)
        return jsonToPhoto
            
-.. image:: ../api_bp.png
+.. image:: ../Photo/api.png
    :align: center
-   :alt: api_bp运行图    
+   :alt: api
 
 添加新功能[音乐播放器]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -226,7 +222,10 @@ utils.py [工具类]
        for r in rq.format_results().split('\n\n'):
            record+='%s'%(make_html_paragraph(r))
        return record+'\n'
-
+       
+.. image:: ../Photo/show.png
+   :align: center
+   :alt: show
 
 References
 -------------
