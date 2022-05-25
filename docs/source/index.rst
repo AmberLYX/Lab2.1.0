@@ -43,9 +43,14 @@ Materials and Methods
 方法
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-使用blueprint的方法
+blueprint使用详解
 
 https://www.imooc.com/wiki/flasklesson/blueprint.html
+
+HTTPie使用详解
+
+https://zhuanlan.zhihu.com/p/45093545
+
 
 Results
 -------------
@@ -269,4 +274,6 @@ References
 [1] `blueprints <http://exploreflask.com/en/latest/blueprints.html/>`_
 [2] `JSON format <http://lanlab.org/course/2022s/softarch/returned_json.txt/>`_
 [3] `Flask蓝图的基本使用 <https://m.imooc.com/wiki/flasklesson-blueprint/>`_
+[4] `HTTPie使用详解 <https://zhuanlan.zhihu.com/p/45093545/>`_
+
 
