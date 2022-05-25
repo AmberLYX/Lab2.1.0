@@ -56,7 +56,8 @@ Photo String 的运行
 .. image:: ../Photo/run.jpg
    :align: center
    :alt: Photo String 运行结果图
-
+   
+图1：Photo String 的运行结果图
 
 upload_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -98,10 +99,13 @@ upload_bp.py
    :align: center
    :alt: upload_bp运行图     
               
+图2：upload_bp的运行图
+
 .. image:: ../upload2.png
    :align: center
-   :alt: upload_bp运行图    
-    
+   :alt: upload_bp运行图  
+   
+图3：upload_bp的运行结果图    
    
 show_bp.py  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -121,6 +125,8 @@ show_bp.py
 .. image:: ../Photo/show.png
    :align: center
    :alt: show
+   
+图4：show_bp的运行结果图    
 
 search_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -140,7 +146,8 @@ search_bp.py
 .. image:: ../Photo/search.png
    :align: center
    :alt: search
-   
+ 
+ 图5：search_bp的运行结果图      
 api_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: python
@@ -183,7 +190,8 @@ api_bp.py
 .. image:: ../Photo/api.png
    :align: center
    :alt: api
-
+   
+图6：api_bp的运行结果图    
 添加新功能[音乐播放器]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 utils.py [工具类]
@@ -226,7 +234,7 @@ utils.py [工具类]
 .. image:: ../Photo/show.png
    :align: center
    :alt: show
-
+图7：添加新功能的运行结果图    
 References
 -------------
 [1] `blueprints <http://exploreflask.com/en/latest/blueprints.html/>`_
