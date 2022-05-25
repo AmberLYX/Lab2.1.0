@@ -154,12 +154,14 @@ search_bp.py
    def search(name):
        r = "SELECT * FROM photo WHERE  description  LIKE '%"+name+"%' ORDER By time desc"
        return get_database_photos(r)
-           
+
+
 .. image:: ../Photo/search.png
    :align: center
    :alt: search
 
- ` 图5：search_bp的运行结果图     <https://cloud.zjnu.edu.cn/share/ef3a4fd628be40b3ccdabb03cf>`_
+
+ ` 图5：search_bp的运行结果图  <https://cloud.zjnu.edu.cn/share/ef3a4fd628be40b3ccdabb03cf>`_
  
  
 api_bp.py
