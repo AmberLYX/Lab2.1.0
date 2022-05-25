@@ -267,3 +267,5 @@ References
 ------------------------
 
 [1] `blueprints <http://exploreflask.com/en/latest/blueprints.html/>`_
+[2] `JSON format <http://lanlab.org/course/2022s/softarch/returned_json.txt/>`_
+
