@@ -102,6 +102,11 @@ upload_bp.py
    :align: center
    :alt: upload_bp2运行图    
     
+
+.. image:: ../Photo/mermaid-BeginningOfSpring2.png
+   :align: center
+   :alt: BeginningOfSpring类/函数依赖关系图
+   
 show_bp.py  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. code-block:: python
@@ -117,10 +122,9 @@ show_bp.py
        r = "SELECT * FROM photo ORDER By time desc"
        return get_database_photos(r)
 
-           
-.. image:: ../show_bp.png
+.. image:: ../Photo/show.png
    :align: center
-   :alt: show_bp运行图    
+   :alt: show
 
 search_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
