@@ -234,6 +234,7 @@ utils.py [工具类]
 .. image:: ../Photo/new.png
    :align: center
    :alt:新功能
+   
 图7：添加新功能的运行结果图    
 References
 -------------
