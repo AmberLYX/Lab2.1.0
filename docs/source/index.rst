@@ -53,7 +53,7 @@ Results
 Photo String 的运行
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../Photo/run.jpg
+.. image:: ../Photo/run.png
    :align: center
    :alt: Photo String 运行结果图
    
@@ -231,9 +231,9 @@ utils.py [工具类]
            record+='%s'%(make_html_paragraph(r))
        return record+'\n'
        
-.. image:: ../Photo/show.png
+.. image:: ../Photo/新功能.png
    :align: center
-   :alt: show
+   :alt:新功能
 图7：添加新功能的运行结果图    
 References
 -------------
