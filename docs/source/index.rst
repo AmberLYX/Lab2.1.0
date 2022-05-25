@@ -109,6 +109,7 @@ upload_bp.py
    
 show_bp.py  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. code-block:: python
 
    from flask import Blueprint
@@ -130,6 +131,7 @@ show_bp.py
 
 search_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. code-block:: python
 
    from flask import Blueprint
@@ -148,8 +150,10 @@ search_bp.py
    :alt: search
  
  图5：search_bp的运行结果图      
+ 
 api_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 .. code-block:: python
 
    import json
@@ -192,8 +196,10 @@ api_bp.py
    :alt: api
    
 图6：api_bp的运行结果图    
+
 添加新功能[音乐播放器]
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 utils.py [工具类]
 
 .. code-block:: python
