@@ -53,7 +53,7 @@ Results
 Photo String 的运行
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. image:: ../Photo/run.png
+.. image:: ../Photo/run1.png
    :align: center
    :alt: Photo String 运行结果图
 
