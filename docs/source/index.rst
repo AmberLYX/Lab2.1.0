@@ -95,13 +95,13 @@ upload_bp.py
            r = "SELECT * FROM photo ORDER By time desc"
            return page
            
-.. image:: ../upload1.png
+.. image:: ../Photo/upload1.png
    :align: center
    :alt: upload_bp运行图     
               
 图2：upload_bp的运行图
 
-.. image:: ../upload2.png
+.. image:: ../Photo/upload2.png
    :align: center
    :alt: upload_bp运行图  
    
@@ -231,7 +231,7 @@ utils.py [工具类]
            record+='%s'%(make_html_paragraph(r))
        return record+'\n'
        
-.. image:: ../Photo/新功能.png
+.. image:: ../Photo/new.png
    :align: center
    :alt:新功能
 图7：添加新功能的运行结果图    
