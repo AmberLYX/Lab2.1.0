@@ -57,7 +57,9 @@ Photo String 的运行
    :align: center
    :alt: Photo String 运行结果图
    
-图1：Photo String 的运行结果图
+
+`图1：Photo String 的运行结果图  <https://cloud.zjnu.edu.cn/share/2c2667c25e40c97c663845c718>`_
+
 
 upload_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -99,13 +101,19 @@ upload_bp.py
    :align: center
    :alt: upload_bp运行图     
               
-图2：upload_bp的运行图
+
+
+`图2：upload_bp的运行图  <https://cloud.zjnu.edu.cn/share/20df574bcde49035a3263b932e>`_
+
 
 .. image:: ../Photo/upload2.png
    :align: center
    :alt: upload_bp运行图  
    
-图3：upload_bp的运行结果图    
+   
+
+`图3：upload_bp的运行结果图  <https://cloud.zjnu.edu.cn/share/ca841779f516893aa542f72894>`_
+
    
 show_bp.py  
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,7 +135,9 @@ show_bp.py
    :align: center
    :alt: show
    
-图4：show_bp的运行结果图    
+  
+`图4：show_bp的运行结果图    <https://cloud.zjnu.edu.cn/share/ab1accd35d94551c27e644f4f9>`_
+
 
 search_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -148,8 +158,9 @@ search_bp.py
 .. image:: ../Photo/search.png
    :align: center
    :alt: search
+
+ ` 图5：search_bp的运行结果图     <https://cloud.zjnu.edu.cn/share/ef3a4fd628be40b3ccdabb03cf>`_
  
- 图5：search_bp的运行结果图      
  
 api_bp.py
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
