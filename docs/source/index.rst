@@ -195,7 +195,8 @@ api_bp.py
    :align: center
    :alt: api
    
-图6：api_bp的运行结果图    
+    
+`图6：api_bp的运行结果图  <https://cloud.zjnu.edu.cn/share/fad4386263c4c8f3c9c241a2df>`_
 
 
 添加新功能[音乐播放器]
